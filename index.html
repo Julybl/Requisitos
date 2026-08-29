@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         DOCUMENT
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Base de datos interactiva de personajes y requisitos."
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b33bd"
+    >
+
+    <title>Requisitos</title>
+
+
+    <!-- =====================================================
+         PRECONNECT
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <!-- =====================================================
+         FONTS
+    ====================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         ICONS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <body>
+
+    <!-- =====================================================
+         GENDER NOTICE
+    ====================================================== -->
+
+    <div class="gender-notice">
+
+        <div class="gender-notice-icon">
+            <i class="fa-solid fa-venus-mars"></i>
+        </div>
+
+        <div class="gender-notice-text">
+
+            <strong>
+                AVISO IMPORTANTE
+            </strong>
+
+            <span>
+                El personaje del género opuesto tendrá los mismos
+                requisitos y técnicas que su personaje original.
+            </span>
+
+        </div>
+
+        <button
+            class="gender-notice-close"
+            type="button"
+            aria-label="Cerrar aviso"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+    <div
+        id="molten-background"
+        class="molten-background"
+        aria-hidden="true"
+    ></div>
+
+    <!-- =====================================================
+         BACKGROUND OVERLAY
+    ====================================================== -->
+
+    <div class="background-overlay"></div>
+
+
+    <!-- =====================================================
+         NOISE
+    ====================================================== -->
+
+    <div
+        class="noise-overlay"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         PAGE
+    ====================================================== -->
+
+    <div class="page">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="site-header">
+
+            <div class="header-inner">
+
+
+                <!-- BRAND -->
+
+                <a
+                    href="#top"
+                    class="brand"
+                    aria-label="Inicio"
+                >
+
+                    <span class="brand-icon">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                    </span>
+
+                    <span class="brand-text">
+
+                        <span class="brand-main">
+                            CHARACTER
+                        </span>
+
+                        <span class="brand-sub">
+                            REQUIREMENTS
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+                <!-- NAV -->
+
+                <nav class="main-nav">
+
+                    <a
+                        href="#top"
+                        class="nav-link active"
+                    >
+                        Inicio
+                    </a>
+
+                    <a
+                        href="#characters"
+                        class="nav-link"
+                    >
+                        Personajes
+                    </a>
+
+                </nav>
+
+
+                <!-- HEADER STATUS -->
+
+                <div class="header-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        DATABASE ONLINE
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main id="top">
+
+
+            <!-- =================================================
+                 HERO
+            ================================================== -->
+
+            <section class="hero-section">
+
+
+                <!-- Decorative lines -->
+
+                <div class="hero-grid"></div>
+
+
+                <div class="hero-content">
+
+
+                    <!-- Eyebrow -->
+
+                    <div class="hero-eyebrow">
+
+                        <span class="eyebrow-line"></span>
+
+                        <span>
+                            CHARACTER DATABASE
+                        </span>
+
+                        <span class="eyebrow-line"></span>
+
+                    </div>
+
+
+                    <!-- Main title -->
+
+                    <h1 class="hero-title">
+
+                        <span class="title-small">
+                            REQUIREMENTS
+                        </span>
+
+                        <span class="title-main">
+                            ARCHIVE
+                        </span>
+
+                    </h1>
+
+
+                    <!-- Description -->
+
+                    <p class="hero-description">
+
+                        Explora los requisitos y técnicas disponibles
+                        para cada personaje.
+
+                        <br>
+
+                        Busca un personaje y accede directamente
+                        a su sección.
+
+                    </p>
+
+
+                    <!-- Search -->
+
+                    <div class="search-wrapper">
+
+
+                        <div class="search-box">
+
+
+                            <span class="search-icon">
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+
+                            </span>
+
+
+                            <input
+                                id="character-search"
+                                class="character-search"
+                                type="search"
+                                placeholder="Buscar personaje..."
+                                autocomplete="off"
+                                spellcheck="false"
+                                aria-label="Buscar personaje"
+                            >
+
+
+                            <button
+                                id="clear-search"
+                                class="clear-search"
+                                type="button"
+                                aria-label="Limpiar búsqueda"
+                            >
+
+                                <i class="fa-solid fa-xmark"></i>
+
+                            </button>
+
+
+                            <span class="search-shortcut">
+
+                                ENTER
+
+                            </span>
+
+
+                        </div>
+
+
+                        <!-- Search results -->
+
+                        <div
+                            id="search-results"
+                            class="search-results"
+                            aria-live="polite"
+                        ></div>
+
+
+                    </div>
+
+
+                    <!-- Stats -->
+
+                    <div class="hero-stats">
+
+
+                        <div class="hero-stat">
+
+                            <span
+                                id="character-count"
+                                class="stat-number"
+                            >
+                                0
+                            </span>
+
+                            <span class="stat-label">
+                                PERSONAJES
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat-divider"></div>
+
+
+                        <div class="hero-stat">
+
+                            <span
+                                id="technique-count"
+                                class="stat-number"
+                            >
+                                0
+                            </span>
+
+                            <span class="stat-label">
+                                TÉCNICAS
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat-divider"></div>
+
+
+                        <div class="hero-stat">
+
+                            <span
+                                class="stat-number"
+                            >
+                                LIVE
+                            </span>
+
+                            <span class="stat-label">
+                                DATABASE
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Scroll indicator -->
+
+                <a
+                    href="#characters"
+                    class="scroll-indicator"
+                    aria-label="Ver personajes"
+                >
+
+                    <span class="scroll-text">
+                        EXPLORAR
+                    </span>
+
+                    <span class="scroll-arrow">
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </span>
+
+                </a>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CHARACTERS
+            ================================================== -->
+
+            <section
+                id="characters"
+                class="characters-section"
+            >
+
+
+                <!-- Section heading -->
+
+                <div class="section-heading">
+
+
+                    <div class="section-heading-left">
+
+
+                        <span class="section-kicker">
+
+                            DATABASE / 001
+
+                        </span>
+
+
+                        <h2 class="section-title">
+
+                            CHARACTER
+                            <span>ARCHIVE</span>
+
+                        </h2>
+
+
+                    </div>
+
+
+                    <div class="section-heading-right">
+
+
+                        <p>
+                            Selecciona cualquier personaje
+                            para consultar sus requisitos.
+                        </p>
+
+
+                        <div class="section-line"></div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FILTER BAR
+                ================================================== -->
+
+                <div class="filter-bar">
+
+
+                    <div class="filter-info">
+
+                        <span class="filter-icon">
+
+                            <i class="fa-solid fa-filter"></i>
+
+                        </span>
+
+                        <span>
+                            MOSTRANDO
+                        </span>
+
+                        <strong id="visible-count">
+                            0
+                        </strong>
+
+                        <span>
+                            PERSONAJES
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        id="show-all"
+                        class="filter-button active"
+                        type="button"
+                    >
+
+                        TODOS
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     CHARACTERS GRID
+                ================================================== -->
+
+                <div
+                    id="characters-grid"
+                    class="characters-grid"
+                >
+
+                    <!--
+
+                        Los personajes se generan
+                        automáticamente desde script.js.
+
+                        Cada personaje tendrá esta estructura:
+
+                        article.character-card
+
+                            ├── electric border
+                            ├── número
+                            ├── nombre
+                            ├── contador
+                            ├── requisitos normales
+                            └── técnicas especiales
+
+                    -->
+
+
+                    <!-- Loading -->
+
+                    <div
+                        id="loading-state"
+                        class="loading-state"
+                    >
+
+                        <div class="loading-spinner"></div>
+
+                        <span>
+                            LOADING DATABASE...
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     NO RESULTS
+                ================================================== -->
+
+                <div
+                    id="no-results"
+                    class="no-results hidden"
+                >
+
+                    <div class="no-results-icon">
+
+                        <i class="fa-solid fa-user-slash"></i>
+
+                    </div>
+
+
+                    <h3>
+                        PERSONAJE NO ENCONTRADO
+                    </h3>
+
+
+                    <p>
+                        No encontramos ningún personaje
+                        con ese nombre.
+                    </p>
+
+
+                    <button
+                        id="reset-search"
+                        type="button"
+                        class="reset-button"
+                    >
+
+                        <i class="fa-solid fa-rotate-left"></i>
+
+                        MOSTRAR TODOS
+
+                    </button>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 QUICK SEARCH / CTA
+            ================================================== -->
+
+            <section class="quick-search-section">
+
+
+                <div class="quick-search-card">
+
+
+                    <div class="quick-search-decoration"></div>
+
+
+                    <div class="quick-search-content">
+
+
+                        <span class="section-kicker">
+                            QUICK ACCESS
+                        </span>
+
+
+                        <h2>
+                            ¿BUSCAS UN
+                            <span>PERSONAJE?</span>
+                        </h2>
+
+
+                        <p>
+                            Utiliza el buscador para encontrarlo
+                            instantáneamente.
+                        </p>
+
+
+                        <button
+                            id="focus-search"
+                            class="quick-search-button"
+                            type="button"
+                        >
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            BUSCAR PERSONAJE
+
+                        </button>
+
+
+                    </div>
+
+
+                    <div class="quick-search-symbol">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
+
+        <footer class="site-footer">
+
+
+            <div class="footer-inner">
+
+
+                <div class="footer-brand">
+
+
+                    <span class="footer-logo">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <strong>
+                            CHARACTER REQUIREMENTS
+                        </strong>
+
+                        <span>
+                            Interactive Database
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="footer-center">
+
+                    <span>
+                        DATABASE SYSTEM
+                    </span>
+
+                    <span class="footer-status">
+
+                        <span class="status-dot"></span>
+
+                        ONLINE
+
+                    </span>
+
+                </div>
+
+
+                <div class="footer-right">
+
+                    <span>
+                        © 2026
+                    </span>
+
+                    <span>
+                        Olivia Aiku
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </footer>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         SCROLL TO TOP
+    ====================================================== -->
+
+    <button
+        id="scroll-top"
+        class="scroll-top"
+        type="button"
+        aria-label="Volver arriba"
+    >
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/ogl/dist/ogl.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
