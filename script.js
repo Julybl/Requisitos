@@ -3258,7 +3258,7 @@ const characters = [
 
 {
     id: "sae",
-    name: "Itoshi Sae",
+    name: "Sae Itoshi",
 
     normal: [
         "Tiro ajustado",
@@ -5021,7 +5021,7 @@ const characters = [
 
 {
     id: "rin",
-    name: "Itoshi Rin",
+    name: "Rin Itoshi",
 
     normal: [
         "Bloqueo Deslizante.",
