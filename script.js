@@ -5633,6 +5633,69 @@ const characters = [
 },
 
 {
+    id: "rivaul",
+    name: "Rivaul",
+
+    normal: [
+        "Defensa Submarino a alta velocidad.",
+        "Giro de Rivaul.",
+        "Regate Asesino.",
+        "Pase PintPoint.",
+        "Pase Halcón dorado.",
+        "Nuevo Duo de oro (Tsubasa).",
+        "Intercepción halcón aéreo.",
+        "Chilena sin control.",
+        "Tiro Halcón Dorado.",
+        "Intercepción Chilena del halcón.",
+        "Cabezazo Aéreo Arrollador.",
+        "Codazo asesino."
+    ],
+
+    special: [
+        {
+            text: "N.R.S (Natureza, Santana).",
+            star: false
+        },
+        {
+            text: "Tiro Halcón Dorado",
+            star: true
+        },
+        {
+            text: "SkyHawk Shot.",
+            star: false
+        },
+        {
+            text: "Tiro de Zurda Victoriosa.",
+            star: false
+        },
+        {
+            text: "Contraremate aéreo a alta velocidad (Schneider).",
+            star: false
+        },
+        {
+            text: "Pase de tacón Técnico.",
+            star: false
+        },
+        {
+            text: "Tiro del Halcón Cruzado (Tsubasa).",
+            star: false
+        },
+        {
+            text: "Defensa Submarino cazadora.",
+            star: false
+        },
+        {
+            text: "Pase Abdominal.",
+            star: false
+        },
+        {
+            text: "Full Metal Phantom de Volea aérea (Santana, Natureza)",
+            star: true
+        }
+    ]
+},
+
+{
     id: "okuhito",
     name: "Okuhito Lemon",
 
