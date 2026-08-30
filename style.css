@@ -799,7 +799,6 @@ img {
 ========================================================= */
 
 .hero-section {
-
     position: relative;
 
     min-height: 100vh;
@@ -808,7 +807,6 @@ img {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     padding:
@@ -816,8 +814,12 @@ img {
         24px
         100px;
 
-    overflow: hidden;
-
+    /*
+     * IMPORTANTE:
+     * Permitimos que el buscador sobresalga
+     * de la sección Hero.
+     */
+    overflow: visible;
 }
 
 
@@ -1218,7 +1220,6 @@ img {
 ========================================================= */
 
 .search-wrapper {
-
     position: relative;
 
     width:
@@ -1229,10 +1230,12 @@ img {
 
     margin: auto;
 
+    z-index: 50;
+
     animation:
         fadeSlideUp .8s .65s both;
-
 }
+
 
 
 .search-box {
@@ -1469,26 +1472,43 @@ img {
    18. SEARCH RESULTS
 ========================================================= */
 
+/* =========================================================
+   18. SEARCH RESULTS
+========================================================= */
+
 .search-results {
 
     position: absolute;
 
     top: calc(100% + 9px);
-
     left: 0;
     right: 0;
 
-    z-index: 100;
+    z-index: 1000;
 
     display: flex;
-
     flex-direction: column;
 
     gap: 4px;
 
-    max-height: 310px;
+    /*
+     * Altura máxima del panel.
+     * Si hay muchos resultados,
+     * aparece scroll DENTRO del buscador.
+     */
+    max-height: min(310px, 45vh);
 
     overflow-y: auto;
+    overflow-x: hidden;
+
+    /*
+     * Evita que el scroll del buscador
+     * bloquee innecesariamente el scroll
+     * de la página.
+     */
+    overscroll-behavior: contain;
+
+    -webkit-overflow-scrolling: touch;
 
     padding: 6px;
 
@@ -1504,6 +1524,9 @@ img {
     backdrop-filter:
         blur(25px);
 
+    -webkit-backdrop-filter:
+        blur(25px);
+
     box-shadow:
         0 20px 60px
         rgba(0,0,0,.5);
@@ -1516,13 +1539,24 @@ img {
         translateY(-8px)
         scale(.98);
 
+    transform-origin: top center;
+
     transition:
         opacity .2s ease,
         visibility .2s ease,
         transform .2s ease;
 
+    /*
+     * El panel no genera problemas
+     * de tamaño en el layout.
+     */
+    scrollbar-width: thin;
 }
 
+
+/* =========================================================
+   SEARCH RESULTS — ACTIVE
+========================================================= */
 
 .search-results.active {
 
@@ -1533,9 +1567,48 @@ img {
     transform:
         translateY(0)
         scale(1);
-
 }
 
+
+/* =========================================================
+   SEARCH RESULTS — SCROLLBAR
+========================================================= */
+
+.search-results::-webkit-scrollbar {
+    width: 5px;
+}
+
+.search-results::-webkit-scrollbar-track {
+    background:
+        rgba(255,255,255,.025);
+
+    border-radius: 10px;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+    background:
+        linear-gradient(
+            180deg,
+            var(--blue),
+            var(--cyan)
+        );
+
+    border-radius: 10px;
+}
+
+.search-results::-webkit-scrollbar-thumb:hover {
+    background:
+        linear-gradient(
+            180deg,
+            var(--blue-light),
+            var(--cyan-light)
+        );
+}
+
+
+/* =========================================================
+   INDIVIDUAL SEARCH RESULT
+========================================================= */
 
 .search-result {
 
@@ -1545,56 +1618,97 @@ img {
 
     gap: 13px;
 
+    flex: 0 0 auto;
+
     padding:
         13px 15px;
+
+    min-height: 62px;
 
     border-radius: 10px;
 
     cursor: pointer;
 
-    text-align: left;
-
     transition:
         background .2s ease,
-        transform .2s ease;
+        transform .2s ease,
+        border-color .2s ease;
 
+    border:
+        1px solid
+        transparent;
 }
 
+
+/* Hover */
 
 .search-result:hover {
 
     background:
-        rgba(39,173,209,.10);
+        rgba(39,173,209,.08);
+
+    border-color:
+        rgba(39,173,209,.18);
 
     transform:
-        translateX(4px);
-
+        translateX(3px);
 }
 
 
-.search-result-number {
+/* =========================================================
+   MOBILE SEARCH RESULTS
+========================================================= */
 
-    color: var(--cyan);
+@media (max-width: 768px) {
 
-    font-family: var(--font-display);
+    .search-results {
 
-    font-size: 8px;
+        /*
+         * En móviles dejamos más espacio
+         * pero seguimos limitando la altura.
+         */
+        max-height: min(360px, 50vh);
 
+        top: calc(100% + 7px);
+
+        padding: 5px;
+
+        border-radius: 12px;
+    }
+
+    .search-result {
+
+        padding:
+            11px 12px;
+
+        min-height: 58px;
+
+        gap: 10px;
+    }
 }
 
 
-.search-result-name {
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
 
-    font-family: var(--font-display);
+@media (max-width: 480px) {
 
-    font-size: 11px;
+    .search-results {
 
-    font-weight: 700;
+        max-height: 45vh;
 
-    letter-spacing: .08em;
+        border-radius: 11px;
+    }
 
+    .search-result {
+
+        padding:
+            10px;
+
+        min-height: 54px;
+    }
 }
-
 
 /* =========================================================
    19. HERO STATS
