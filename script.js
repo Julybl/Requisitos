@@ -5820,6 +5820,457 @@ const characters = [
     ]
 },
 
+{
+    id: "archer",
+    name: "Archer Hawkins",
+
+    normal: [
+        "Remate del halcón.",
+        "Flecha huracán.",
+        "Envío del halcón.",
+        "Amague accidental del novato.",
+        "Tiro del Hawkins."
+    ],
+
+    special: [
+        {
+            text: "Bloqueo del vacío.",
+            star: false
+        },
+        {
+            text: "Halcón x Tigre (Austin).",
+            star: false
+        },
+        {
+            text: "Capitán x Ex pandillero (Mark).",
+            star: false
+        },
+        {
+            text: "Intercepción facial de rebote.",
+            star: false
+        },
+        {
+            text: "Despeje del halcón.",
+            star: false
+        },
+        {
+            text: "Despertar futbolístico de Archer Hawkins",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "axel_blaze",
+    name: "Axel Blaze",
+
+    normal: [
+        "Entrada de llamas.",
+        "Robo rápido.",
+        "Remate combinado de fuego (Jude).",
+        "Barrida del delantero de fuego.",
+        "Rompe bloqueos.",
+        "Súper relámpago (Mark)."
+    ],
+
+    special: [
+        {
+            text: "Entrada del 10.",
+            star: false
+        },
+        {
+            text: "Tormenta de fuego.",
+            star: false
+        },
+        {
+            text: "Cortafuegos.",
+            star: false
+        },
+        {
+            text: "Torbellino de fuego.",
+            star: false
+        },
+        {
+            text: "Último recurso",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "bai_long",
+    name: "Bai Long",
+
+    normal: [
+        "Fuera de mi vista.",
+        "Mejor come polvo.",
+        "Regate supersónico.",
+        "No eres suficiente.",
+        "Rizo de Dragón.",
+        "Proyectil de Ozono."
+    ],
+
+    special: [
+        {
+            text: "Dragon Heráldico, Guiverno Blanco.",
+            star: false
+        },
+        {
+            text: "Zero Magnus (Tezcat).",
+            star: false
+        },
+        {
+            text: "Defensa de los mejores (Tezcat).",
+            star: false
+        },
+        {
+            text: "Fuerza Colosal.",
+            star: false
+        },
+        {
+            text: "Aliento Blanco",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "byron_love",
+    name: "Byron Love",
+
+    normal: [
+        "Apisonadora.",
+        "Flecha Divina.",
+        "Tiro de advertencia.",
+        "Regate supersónico.",
+        "Himno de atenea.",
+        "Remate celestial."
+    ],
+
+    special: [
+        {
+            text: "El poder de un Dios.",
+            star: false
+        },
+        {
+            text: "Dúo improvisado (Axel).",
+            star: false
+        },
+        {
+            text: "Trio de Corea (Torch y Gazelle).",
+            star: false
+        },
+        {
+            text: "Omnisaburia divina.",
+            star: false
+        },
+        {
+            text: "Remate caótico (Torch y Gazelle)",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "goldie_lemmon",
+    name: "Goldie Lemmon",
+
+    normal: [
+        "Pasos aéreos.",
+        "Tornado de fuego DD (Compañero random).",
+        "Pase de confianza.",
+        "Gol contra la desesperanza.",
+        "Despeje despreocupado.",
+        "Tiro amasado."
+    ],
+
+    special: [
+        {
+            text: "Tornado de fuego DT (Victor y Arion).",
+            star: false
+        },
+        {
+            text: "Entrada por sorpresa.",
+            star: false
+        },
+        {
+            text: "Bloqueo perseverante.",
+            star: false
+        },
+        {
+            text: "Guerrera del amanecer, Amaterasu.",
+            star: false
+        },
+        {
+            text: "Flecha de alba",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "heath_moore",
+    name: "Heath Moore",
+
+    normal: [
+        "¡Guarda la espalda!",
+        "Duelo de caballeros.",
+        "Regate del emperador táctico.",
+        "Punta de la espada.",
+        "Espada y escudo.",
+        "Estocada real.",
+        "Velo luminoso."
+    ],
+
+    special: [
+        {
+            text: "Grid Omega.",
+            star: false
+        },
+        {
+            text: "Campo explosivo.",
+            star: false
+        },
+        {
+            text: "Emperador y Bastón (Lucas).",
+            star: false
+        },
+        {
+            text: "Marcaje al hombre.",
+            star: false
+        },
+        {
+            text: "Grid Omega 2.0",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "jude_sharp",
+    name: "Jude Sharp",
+
+    normal: [
+        "Remate Combinado (Erik).",
+        "Pingüino Emperador N°2 (Axel y Erik).",
+        "Intercepción Analítica.",
+        "Regate Imperial.",
+        "Elevada del Emperador.",
+        "Remate combinado (Axel)."
+    ],
+
+    special: [
+        {
+            text: "Primera Leyenda (Axel).",
+            star: false
+        },
+        {
+            text: "Chilena de pingüino.",
+            star: false
+        },
+        {
+            text: "Triángulo letal triturador (Eliot y Caleb).",
+            star: false
+        },
+        {
+            text: "Tridente legendario del Raimon (Axel y Mark).",
+            star: false
+        },
+        {
+            text: "Ruptura relámpago CG (Mark y Axel)",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "mark_evans",
+    name: "Mark Evans",
+
+    normal: [
+        "Despeje de fuego.",
+        "Despeje explosivo.",
+        "Reacción al último segundo.",
+        "Robo Testarudo.",
+        "Remate desesperado.",
+        "Mano Celestial Doble."
+    ],
+
+    special: [
+        {
+            text: "Parada celestial.",
+            star: false
+        },
+        {
+            text: "Mano Omega.",
+            star: false
+        },
+        {
+            text: "Cabezazo Gigatón.",
+            star: false
+        },
+        {
+            text: "Mano de diamante.",
+            star: false
+        },
+        {
+            text: "Mano Gigante Grandius",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "ricardo_di_rigo",
+    name: "Ricardo Di Rigo",
+
+    normal: [
+        "Visto y no visto.",
+        "Clave de sol.",
+        "Virtuoso.",
+        "Entrada doble (Gabriel).",
+        "Volea de la desesperanza.",
+        "Pasos aéreos."
+    ],
+
+    special: [
+        {
+            text: "Director Magister.",
+            star: false
+        },
+        {
+            text: "Virtuoso Volcánico.",
+            star: false
+        },
+        {
+            text: "Pasion del capitán Di Rigo.",
+            star: false
+        },
+        {
+            text: "Triple amenaza (Víctor y Arion).",
+            star: false
+        },
+        {
+            text: "Movimientos armónicos",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "shawn_frost",
+    name: "Shawn Frost",
+
+    normal: [
+        "Finta de nieve.",
+        "Ventisca Eterna.",
+        "Regate aurora.",
+        "Ciclón.",
+        "Barrida de lado a lado.",
+        "Corte giratorio."
+    ],
+
+    special: [
+        {
+            text: "Aullido de Lobo.",
+            star: false
+        },
+        {
+            text: "Rompehielos.",
+            star: false
+        },
+        {
+            text: "Hermanos Frosts (Aiden).",
+            star: false
+        },
+        {
+            text: "Fuego Cruzado (Axel).",
+            star: false
+        },
+        {
+            text: "Lanza Gélida",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "tezcat",
+    name: "Tezcat",
+
+    normal: [
+        "Salto dimensional.",
+        "Mírame mírame.",
+        "Adelante, me aburrí.",
+        "Pizpaz.",
+        "El Ojo del Huracán.",
+        "Demasiado Lento."
+    ],
+
+    special: [
+        {
+            text: "Señor Oscuro, Azote Negro.",
+            star: false
+        },
+        {
+            text: "Zero Magnus (Bai Long).",
+            star: false
+        },
+        {
+            text: "Defensa de los mejores (Bai Long).",
+            star: false
+        },
+        {
+            text: "Balón guiado.",
+            star: false
+        },
+        {
+            text: "Hacha del Azote Negro",
+            star: true
+        }
+    ]
+},
+
+{
+    id: "zanark_avalonic",
+    name: "Zanark Avalonic",
+
+    normal: [
+        "Coz 3.",
+        "Corte Mágico.",
+        "Superelástico.",
+        "Embestida del Todopoderoso.",
+        "Tiro Amasado.",
+        "Remolino Ígneo."
+    ],
+
+    special: [
+        {
+            text: "Principe del Plano Astral Zodíaco.",
+            star: false
+        },
+        {
+            text: "Muy divertido, sois muy divertidos.",
+            star: false
+        },
+        {
+            text: "Arremetida Zodiacal.",
+            star: false
+        },
+        {
+            text: "Caida Planetaria.",
+            star: false
+        },
+        {
+            text: "Miximax trans Huracán Z.",
+            star: false
+        },
+        {
+            text: "Soy Todopoderoso Ultra",
+            star: true
+        }
+    ]
+},
 
     
 ];
