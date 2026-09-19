@@ -6272,6 +6272,42 @@ const characters = [
     ]
 },
 
+{
+    id: "kira",
+    name: "Ryosuke Kira",
+
+    normal: [
+        "Control Promesa.",
+        "Avance devastador.",
+        "Motivación aliada.",
+        "Celebración Victoriosa.",
+        "Regate Arrasador.",
+        "Pase Trasero.",
+        "Duelo Forzado.",
+        "Retención Forzada.",
+        "Intercepción Forzada.",
+        "Marcaje en duo (Nagi)"
+    ],
+
+    special: [
+        {
+            text: "Bloqueo Enojo Facial.",
+            star: false
+        },
+        {
+            text: "Dupla vengativa (Nagi)",
+            star: false
+        },
+        {
+            text: "Dupla ideal (Shinro)",
+            star: false
+        },
+        {
+            text: "Remate Rompedor de sueños",
+            star: true
+        }
+    ]
+},
     
 ];
 
