@@ -498,17 +498,18 @@ const characters = [
             "Combinación con Sano V2.",
             "Bloqueo de salto con carga.",
             "Intercepción Aguda.",
-            "Entrada combatiente.",
             "Entrada Fuerte.",
+            "Launch Tackle.",
             "Bloqueo de Alto poder.",
             "¡Mira de que estoy realmente Hecho!",
             "Bloqueo Inmortal.",
             "Veloz Bloqueo Deslizante."
+            
         ],
 
         special: [
             {
-                text: "Launch Tackle.",
+                text: "Entrada combatiente.",
                 star: false
             },
             {
@@ -2001,7 +2002,7 @@ const characters = [
 },
 
 {
-    id: "bunmaak",
+    id: "bunaak",
     name: "Singprasert Bunnaak",
 
     normal: [
@@ -2020,6 +2021,11 @@ const characters = [
 
         {
             text: "Impacto Tailandés.",
+            star: false
+        },
+
+                {
+            text: "Intercepción Violenta.",
             star: false
         },
 
